@@ -15,7 +15,7 @@ $('.news-item-smaller').click(function (ev) {
   document.location.href = "News_detail.html";
 })
 
-MediaBox('.mediabox');
+
 
 // const videoElement = document.querySelector('.video-bg');
 // const playPauseButton = document.querySelector('.video-icon');
