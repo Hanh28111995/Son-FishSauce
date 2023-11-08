@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SON FOODS - Contact</title>
-     <!-- icon -->
-     <link rel="icon" href="https://www.sonfoodsinc.com/wp-content/uploads/2022/08/cropped-favicon-32x32.png"
-     sizes="32x32">
+    <!-- icon -->
+    <link rel="icon" href="https://www.sonfoodsinc.com/wp-content/uploads/2022/08/cropped-favicon-32x32.png"
+        sizes="32x32">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- font gg -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,7 +93,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d474208.30616671714!2d104.0596212634821!3d10.33800063780107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDEwJzQ5LjYiTiAxMDTCsDAyJzA4LjEiRQ!5e0!3m2!1svi!2sus!4v1699393404231!5m2!1svi!2sus"
                 width="100%" height="592" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
+
             <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
                     ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });</script>
         </div>
@@ -236,20 +236,20 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="./asset/lib/slick/slick.min.js"></script>
     <script>
-
-        $('.client_slides').slick(
-            {
-                dots: true,
-                infinite: true,
-                speed: 500,
-                fade: true,
-                cssEase: 'linear'
-            }
-        ); </script>
+        $(document).ready(function () {
+            $('.client_slides').slick(
+                {
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    fade: true,
+                    cssEase: 'linear'
+                }
+            );
+        })
+    </script>
     <!-- bs4 + fontansome -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

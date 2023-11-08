@@ -448,18 +448,21 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="./asset/lib/slick/slick.min.js"></script>
 	<script>
+		$(document).ready(function () {
+			$('.client_slides').slick(
+				{
+					dots: true,
+					infinite: true,
+					speed: 500,
+					fade: true,
+					cssEase: 'linear',
+					autoplay: true,
+					autoplaySpeed: 3000,
+				}
+			);
+		}) 
+	</script>
 
-		$('.client_slides').slick(
-			{
-				dots: true,
-				infinite: true,
-				speed: 500,
-				fade: true,
-				cssEase: 'linear',
-				autoplay: true,
-				autoplaySpeed: 3000,
-			}
-		); </script>
 	<!-- bs4 + fontansome -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
