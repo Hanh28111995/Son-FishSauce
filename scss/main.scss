@@ -241,6 +241,7 @@ body {
     }
 
     header {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
         background-color: $bg-header-nav;
         position: fixed;
         top: 0;
@@ -1073,6 +1074,8 @@ body {
 
         .news-list {
             margin-bottom: 10px;
+            width: 80%;
+            margin: auto;
 
             .fix-padding-col {
                 padding-left: 7px;
@@ -1083,11 +1086,34 @@ body {
             .news-item-smaller {
                 cursor: pointer;
                 border-radius: 37px;
+                margin-bottom: 25px;
+
+                a {
+                    text-decoration: none;
+                }
 
                 .news-item-content-text {
+                    p.news-header {
+                        color: $t-color-light;
+                        margin-bottom: 0.3rem;
+                        margin-top: 1rem;
+                        font-weight: bold;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
                     p.news-pa {
                         font-weight: 100;
                         color: $t-color-light;
+                        margin: 0 auto;
+                        font-size: 16px;
+                        display: block;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                     }
 
                     p.news-date {
@@ -1096,24 +1122,46 @@ body {
                     }
                 }
 
+                .news-item-smaller-bg {
+                    height: fit-content;
+                    border-radius: 22px;
+                    height: 250px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 22px;
+                        display: flex;
+                        object-fit: cover;
+                        object-position: center;
+                        position: relative;
+                    }
+                }
+
             }
         }
 
-        .fix-padding-col:nth-child(1) {
+        .fix-padding-col:nth-child(1),
+        .fix-padding-col:nth-child(4),
+        .fix-padding-col:nth-child(7) {
             .news-item-smaller {
                 background-color: $bg-color-1;
                 padding: 15px;
             }
         }
 
-        .fix-padding-col:nth-child(2) {
+        .fix-padding-col:nth-child(2),
+        .fix-padding-col:nth-child(5),
+        .fix-padding-col:nth-child(8) {
             .news-item-smaller {
                 background-color: $bg-color-2;
                 padding: 15px;
             }
         }
 
-        .fix-padding-col:nth-child(3) {
+        .fix-padding-col:nth-child(3),
+        .fix-padding-col:nth-child(6),
+        .fix-padding-col:nth-child(9) {
             .news-item-smaller {
                 background-color: $bg-color-3;
                 padding: 15px;
@@ -1210,7 +1258,7 @@ body {
 
                 .post_wrap {
                     .post_item {
-                        padding: 10px 0;
+                        padding-top: 10px;
                         background-color: #fff;
                         border-radius: 4px;
                         box-shadow: 4px 4px 4px 0 rgba($color: #000000, $alpha: 0.3);
@@ -1264,12 +1312,21 @@ body {
                                 padding: 6px 11px;
                                 border-radius: 3px;
                                 background-color: #0095F6;
+
+                                &:hover {
+                                    background-color: #007ff6;
+                                }
                             }
                         }
 
                         .post_item_content {
+                            width: 100%;
+                            height: 500px;
+                            overflow: hidden;
+
                             img {
                                 width: 100%;
+                                height: 100%;
                             }
                         }
 
